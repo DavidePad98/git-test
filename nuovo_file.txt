@@ -1,0 +1,92 @@
+Esercizio #1:
+
+1.Creare un repository locale Git e associarlo ad un progetto:
+
+git init
+
+2.Creare e spostarsi su un branch:
+
+git checkout -b <nome_branch>
+
+3.Effettuare commit su un branch:
+
+git add .
+git commit -m "Descrizione del commit"
+
+4.Effettuare merge di un branch sul master:
+
+git checkout master
+git merge <nome_branch>
+
+5.Effettuare delle modifiche conflittuali su due branch e tentare di effettuare il merge:
+Effettua delle modifiche conflittuali su file comuni nei due branch.
+
+6.Risolvere i conflitti e completare il merge:
+Apri i file in conflitto, risolvi manualmente i conflitti e quindi esegui:
+
+git add .
+git commit -m "Risoluzione dei conflitti"
+
+7.Eliminare un branch dopo averne effettuato il merge:
+
+git branch -d <nome_branch>
+
+8.Creare tag:
+
+git tag <nome_tag>
+
+9.Visualizzare il log dei commit:
+
+git log
+
+**************************************************************
+
+Esercizio #2:
+
+10.Aggiungere un repository remoto su GitHub:
+
+git remote add origin <url_repository_remoto>
+
+11.Pushare i commit al repository remoto:
+
+git push -u origin master
+
+12.Fare il pull dal repository remoto:
+
+git pull origin master
+
+13.Fare il fetch dal repository remoto:
+
+git fetch origin
+
+***********************************************************
+
+Esercizio #3:
+
+14.Inizializzare Git Flow nel repository:
+
+git flow init
+
+15.Creare un nuovo branch di feature utilizzando Git Flow:
+
+git flow feature start nome_funzionalita
+
+16.Effettuare modifiche nel branch di feature, fare commit e concludere il branch di feature:
+
+git add .
+git commit -m "Descrizione del commit"
+git flow feature finish nome_funzionalita
+
+17.Creare una nuova release branch utilizzando Git Flow:
+
+git flow release start numero_versione
+
+18.Concludere la release branch utilizzando Git Flow:
+
+git flow release finish numero_versione
+
+19.Creare e concludere una hotfix branch utilizzando Git Flow:
+
+git flow hotfix start nome_hotfix
+git flow hotfix finish nome_hotfix
+
